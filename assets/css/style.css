@@ -1,0 +1,38 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@100&display=swap');
+
+/* General Styles */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1500px;;
+    margin: auto;
+}
+
+section>article{
+    background-image: url('../img/background.avif');
+    height: 600px;
+    margin-top: 20px;
+}
+
+.alignment{
+    text-align: center;
+}
+
+section>h1{
+    font-family: 'cinzel';
+    color: #999;
+    margin: 20px 100px;
+}
+
+section>article{
+    font-size: 30px;
+    font-family:'cinzel';
+    color: #fff;
+    padding: 300px;
+}
