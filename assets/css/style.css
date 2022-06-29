@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@300&display=swap');
 
 /* General Styles */
 
@@ -13,26 +13,84 @@ body{
     width: 1500px;;
     margin: auto;
 }
-
-section>article{
+/* header styles */
+.articleBackground{
     background-image: url('../img/background.avif');
     height: 600px;
     margin-top: 20px;
 }
 
-.alignment{
-    text-align: center;
-}
 
-section>h1{
+
+header>section>h1{
     font-family: 'cinzel';
     color: #999;
     margin: 20px 100px;
 }
 
-section>article{
+header>section>article{
     font-size: 30px;
-    font-family:'cinzel';
     color: #fff;
     padding: 300px;
+}
+
+/* wiederkehrendes deshalb in klassen */
+
+.alignmentFontCinzel{
+    text-align: center;
+    font-family: 'cinzel';
+}
+.alignmentFontPoppins{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+/* main styles */
+
+main{
+    margin: 0 100px;
+}
+
+article>h3{
+    margin: 80px auto;
+    color: #333;
+    font-size: 24px;
+    height: 25px;
+}
+
+div>img{
+    margin: 20px 0px 0px 0px ;
+    padding: 40px 40px 40px 0px; 
+    width: 33%;
+}
+
+article>h4{
+    padding: 30px;
+    font-size: 24px;
+}
+
+li{
+    font-family:'poppins';
+    list-style-type: none;
+    margin: 15px;
+}
+
+.soldOut::after{
+    content: '  - Sold Out';
+    color: crimson;
+}
+
+.onlyAvailable::after{
+    content: '  - Only 4 Spot Available';
+    color: rgb(218, 120, 0);
+}
+
+.Available::after{
+    content: ' - Available';
+    color: rgb(0, 138, 0);
+}
+
+footer{
+    border-top: 2px outset lightgrey;
+    margin: 50px 50px 50px 0px;
 }
