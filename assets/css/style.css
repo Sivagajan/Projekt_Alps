@@ -13,7 +13,7 @@ body{
     width: 1500px;;
     margin: auto;
 }
-/* header styles */
+/* --------------------------------------header styles----------------------------------- */
 .articleBackground{
     background-image: url('../img/background.avif');
     height: 600px;
@@ -34,7 +34,7 @@ header>section>article{
     padding: 300px;
 }
 
-/* wiederkehrendes deshalb in klassen */
+/* ---------------------------classes for multiple use----------------------------------- */
 
 .alignmentFontCinzel{
     text-align: center;
@@ -44,8 +44,22 @@ header>section>article{
     text-align: center;
     font-family: 'Poppins';
 }
+.soldOut::after{
+    content: '  - Sold Out';
+    color: crimson;
+}
 
-/* main styles */
+.onlyAvailable::after{
+    content: '  - Only 4 Spot Available';
+    color: rgb(218, 120, 0);
+}
+
+.Available::after{
+    content: ' - Available';
+    color: rgb(0, 138, 0);
+}
+
+/* ----------------------------------main styles----------------------------------------- */
 
 main{
     margin: 0 100px;
@@ -75,20 +89,7 @@ li{
     margin: 15px;
 }
 
-.soldOut::after{
-    content: '  - Sold Out';
-    color: crimson;
-}
-
-.onlyAvailable::after{
-    content: '  - Only 4 Spot Available';
-    color: rgb(218, 120, 0);
-}
-
-.Available::after{
-    content: ' - Available';
-    color: rgb(0, 138, 0);
-}
+/* -------------------------------------footer styles------------------------------------ */
 
 footer{
     border-top: 2px outset lightgrey;
